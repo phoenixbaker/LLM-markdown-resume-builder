@@ -1,46 +1,73 @@
-# Getting Started with Create React App
+# Markdown Resume Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A powerful, AI-enhanced markdown resume editor built for DataAnnotation. This application allows users to create, edit, and export professional resumes while receiving real-time AI suggestions for improvements.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This application was developed as part of freelance work for DataAnnotation. The entire project was completed in under 3 hours due to client time constraints. It provides a streamlined interface for resume creation and management with the following features:
 
-### `npm start`
+- Real-time markdown editing and preview
+- AI-powered resume improvement suggestions
+- Local storage for managing multiple resumes
+- PDF export functionality
+- Responsive design that works on both desktop and mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technical Implementation
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Project Structure Note
 
-### `npm test`
+Per client requirements, all application logic is contained within a single file (`App.tsx`). While this is not my preferred architectural approach, it was a specific requirement for this project. In a production environment, I would typically structure the application with proper component separation, custom hooks in separate files, and a more modular architecture.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
 
-### `npm run build`
+- **React** - Frontend framework
+- **TypeScript** - For type safety and enhanced developer experience
+- **Tailwind CSS** (via CDN) - For styling
+- **OpenAI API** - Powers the AI suggestion feature
+- **@uiw/react-md-editor** - Markdown editor component
+- **jsPDF** - For PDF export functionality
+- **Zod** - For runtime type validation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Technical Highlights
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Custom Debouncing Logic** - Optimizes API calls and state updates
+- **Local Storage Integration** - Persists user data without a backend
+- **Responsive Design** - Adapts UI based on device dimensions
+- **Accessibility Considerations** - Keyboard navigation and screen reader support
+- **Error Handling** - Graceful degradation when API requests fail
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Create a `.env` file with your API key:
+   ```
+   REACT_APP_OPENROUTER_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Build for Production
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Future Improvements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If expanding this project further, I would:
 
-## Learn More
+- Implement proper component architecture
+- Add unit and integration tests
+- Add user authentication
+- Create a backend for storing resumes in a database
+- Implement additional export formats
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_This project demonstrates my ability to build complex, interactive React applications according to client specifications, even when working within constraints that differ from standard best practices._
