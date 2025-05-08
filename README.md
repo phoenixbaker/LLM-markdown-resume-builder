@@ -71,3 +71,7 @@ If expanding this project further, I would:
 ---
 
 _This project demonstrates my ability to build complex, interactive React applications according to client specifications, even when working within constraints that differ from standard best practices._
+
+---
+
+##[Video Preview](https://youtu.be/7xqSiKx_n-Q?si=JF1M4tfDpeJJrZbI)
