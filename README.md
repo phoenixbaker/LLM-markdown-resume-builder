@@ -74,4 +74,6 @@ _This project demonstrates my ability to build complex, interactive React applic
 
 ---
 
-## [Video Preview](https://youtu.be/7xqSiKx_n-Q?si=JF1M4tfDpeJJrZbI)
+## Similar Projects (Data Annotation)
+
+### [Chess Game - 2 Hours](https://youtu.be/7xqSiKx_n-Q?si=JF1M4tfDpeJJrZbI)
